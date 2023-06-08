@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+
+.sex{
+    display: flex;
+}
+
+input{
+    padding: 12px 0px;
+    padding-left: 12px;
+    border-radius: 15px;
+}
+
+select{
+    padding: 12px 0px;
+    padding-left: 12px;
+    border-radius: 15px;
+    appearance: none;
+}
+
+body{
+    background-color: rgb(20, 20, 20);
+}
+
+form{
+    background-color: rgb(43, 43, 43);
+    width: 750px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: white;
+}
+
+legend{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.containerLeftTop, .containerMidTop, .containerRightTop, .containerLeftMid, .containerRightMid, .containerLeftBottom, .containerRightBottom{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 26.3%;
+}
+
+.containerTop{
+    display: flex;
+    justify-content: space-around;
+}
+
+.containerMid{
+    display: flex;
+    margin-left: 25px;
+}
+
+.containerBottom{
+    display: flex;
+    margin-left: 25px;
+    margin-top: 14px;
+}
+
+.containerRightBottom{
+    margin-left: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 444px;
+}
+
+.containerRightMid{
+    margin-left: 60px;
+}
+
+input[type=range]{
+    padding: 0;
+    margin-top: 8px;
+}
+
+.urg{
+    margin-top: 7px;
+}
+
+input::placeholder{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+textarea{
+    width: 438px;
+    height: 275px;
+    resize: none;
+    border-radius: 20px;
+}
+
+input[type=submit]{
+    padding: 0;
+    height: 50px;
+    width: 125px;
+}
+
+button{
+    height: 50px;
+    width: 125px;
+    border-radius: 15px;
+}
+
+button:hover, input[type=submit]:hover{
+    background-color: rgb(187, 187, 187);
+}

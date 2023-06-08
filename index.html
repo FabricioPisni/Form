@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <legend>Área de Cadastro</legend>
+
+    <div class="containerTop">
+
+        <div class="containerLeftTop">
+
+            <label for="nome">Nome*</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            
+
+            <label for="senha">Senha*</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+            
+
+            <label for="cpf">CPF*</label>
+            <input type="tel" name="CPF" id="cpf" placeholder="Digite seu CPF" required>
+
+        </div>
+   
+        <div class="containerMidTop">
+
+            <label for="dependentes">Número de Dependentes</label>
+            <input type="number" name="dependentes" id="dependentes" placeholder="Número de dependentes">
+
+            <label for="telefone">Telefone*</label>
+            <input type="tel" name="telefone" id="telefone" required placeholder="Número de telefone">
+
+            <label for="email">E-mail*</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+
+            <h2></h2>
+
+        </div>
+
+        <div class="containerRightTop">
+            
+            <label for="estado">Estado*</label>
+            <select name="estado" id="estado">
+                <option value="">Acre</option>
+                <option value="">Alagoas</option>
+                <option value="">Amapá</option>
+                <option value="">Amazonas</option>
+                <option value="">Bahia</option>
+                <option value="">Ceará</option>
+                <option value="">Distrito Federal</option>
+                <option value="">Espírito Santo</option>
+                <option value="">Goiás</option>
+                <option value="">Maranhão</option>
+                <option value="">Mato Grosso</option>
+                <option value="">Mato Grosso do Sul</option>
+                <option value="">Minas Gerais</option>
+                <option value="">Pará</option>
+                <option value="">Paraíba</option>
+                <option value="">Paraná</option>
+                <option value="">Pernambuco</option>
+                <option value="">Piauí</option>
+                <option value="">Rio de Janeiro</option>
+                <option value="">Rio Grande do Norte</option>
+                <option value="">Rio Grande do Sul</option>
+                <option value="">Rondônia</option>
+                <option value="">Roraima</option>
+                <option value="">Santa Catarina</option>
+                <option value="">São Paulo</option>
+                <option value="">Sergipe</option>
+                <option value="">Tocantins</option>
+            </select>
+
+            <label for="cidade">Cidade*</label>
+            <input type="text" name="cidade" id="cidade" required placeholder="Digite sua cidade">
+
+            <label class="urg" for="urgencia">Grau de Urgência</label>
+            <input type="range" name="urgencia" id="urgencia">
+
+        </div>
+    
+    </div>
+
+    <div class="containerMid">
+        
+        <div class="containerLeftMid">
+        <label>Sexo*</label>
+            <div class="sex">
+            <input type="radio" name="sexo" id="masculino"><label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="feminino"><label for="feminino">Feminino</label>
+            </div>
+            
+            
+            <label for="nasc">Data de Nascimento*</label>
+            <input type="date" name="data" id="nasc" required>
+            
+
+            <label for="civil">Estado Civil*</label>
+            <select name="civil" id="civil" required>
+                <option value="solteiro">Solteiro</option>
+                <option value="casado">Casado</option>
+                <option value="viuvo">Viúvo</option>
+                <option value="separado">Separado</option>
+                <option value="divorciado">Divorciado</option>
+            </select>
+            
+
+            <label for="escolaridade">Escolaridade</label>
+            <select name="escolaridade" id="escolaridade">
+                <option value="fundIn">Fundamental Incomlpeto</option>
+                <option value="fundCom">Fundamental Completo</option>
+                <option value="medIn">Médio Incompleto</option>
+                <option value="medCom">Médio Completo</option>
+                <option value="supIn">Superior Incompleto</option>
+                <option value="supCom">Superior Completo</option>
+                <option value="pos">Pós-graduado</option>
+            </select>
+            
+            
+        </div>
+        
+        <div class="containerRightMid">
+            
+            <label for="mensagem">Mensagem*</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+            
+            
+        </div>
+        
+    </div>
+    
+    <div class="containerBottom">
+
+        <div class="containerLeftBottom">
+
+            <label for="ocupacao">Ocupação Principal</label>
+        <input type="text" name="ocupacao" id="ocupacao" placeholder="Digite sua ocupação principal">
+        
+
+        <label for="renda">Renda Mensal</label>
+        <select name="renda" id="renda">
+            <option value="umDois">Um a dois salários mínimos</option>
+            <option value="tresCinco">Três a cinco salários mínimos</option>
+            <option value="seisNove">Seis a nove salários mínimos</option>
+            <option value="dezVinte">Dez a vinte salários mínimos</option>
+            <option value="maisVinte">Mais de vinte salários mínimos</option>
+        </select>
+
+        </div>
+
+        <div class="containerRightBottom">
+
+            <button>Limpar</button>
+            <input type="submit" value="Enviar">
+        
+        </div>
+
+    </div>
+    
+        </fieldset>
+    </form>
+    
+</body>
+</html>
